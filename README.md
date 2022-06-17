@@ -1,4 +1,7 @@
 # nuxt-pages-sample
+
+https://ttsukasan.github.io/nuxt-pages-sample/
+
 nuxtでGithubPagesを書いてみる
 
 参考 https://qiita.com/peaceiris/items/154fc3f9bccf9e4eb137
@@ -39,10 +42,6 @@ $ npm run dev
 $ npm run generate
 ```
 
-## `dist` ディレクトリを作成
-
-`dist/.keep` を作成、コミットする
-
 ## `.nojekyll` の追加
 
 `npm run generate` で `dist/.nojekyll` が作成されることを確認
@@ -51,10 +50,35 @@ $ npm run generate
 
 `.github/workflows/gh-pages.yml` を作成し、記載する
 
+PushしてActionsが動作することを確認
+
+`gh-pages` ブランチが作成されることを確認
+ 
 ## github pages の設定
 
+リポジトリの Settings > Pages を設定
 
+**Source** Branch: `gh-pages` `/(root)`
+
+_Your site is ready to be published at_ で表示しているものがサイトのURLとなる。
+
+トップページ表示されることを確認（5分くらい待つ）
 
 ## Project pages として表示
 
+`nuxt.config.js` に記載
 
+`my_project_name` はブランチ名に置き換える
+
+```
++ router: {
++   base: '/my_project_name/'
++ }
+```
+
+```
+  link: [
+-   { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
++   { rel: 'icon', type: 'image/x-icon', href: '/my_project_name/favicon.ico' }
+  ]
+```
