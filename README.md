@@ -1,7 +1,11 @@
 # nuxt-pages-sample
 nuxtでGithubPagesを書いてみる
 
+参考 https://qiita.com/peaceiris/items/154fc3f9bccf9e4eb137
+
 # create
+
+プレーンな設定で作成
 
 ```
 > npx create-nuxt-app nuxt-pages-sample
@@ -18,7 +22,7 @@ Generating Nuxt.js project in nuxt-pages-sample
 ? Rendering mode: Universal (SSR / SSG)
 ? Deployment target: Static (Static/Jamstack hosting)
 ? Development tools: None
-? What is your GitHub username? t.tsukamoto
+? What is your GitHub username? ttsukasan
 ? Version control system: Git
 ```
 
@@ -35,6 +39,10 @@ $ npm run dev
 $ npm run generate
 ```
 
+## `dist` ディレクトリを作成
+
+`dist/.keep` を作成、コミットする
+
 ## `.nojekyll` の追加
 
 `npm run generate` で `dist/.nojekyll` が作成されることを確認
@@ -42,4 +50,11 @@ $ npm run generate
 ## GitHub Actions の設定
 
 `.github/workflows/gh-pages.yml` を作成し、記載する
+
+## github pages の設定
+
+
+
+## Project pages として表示
+
 
