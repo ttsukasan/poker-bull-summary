@@ -18,7 +18,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/my_project_name/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/nuxt-pages-sample/favicon.ico' }
     ]
   },
 
