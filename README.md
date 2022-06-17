@@ -82,3 +82,24 @@ _Your site is ready to be published at_ で表示しているものがサイト�
 +   { rel: 'icon', type: 'image/x-icon', href: '/my_project_name/favicon.ico' }
   ]
 ```
+
+Faviconなどが表示されることを確認
+
+## Google tag manager
+
+```bash
+$ npm install @nuxtjs/gtm
+```
+
+`nuxt.config.js` に記載
+
+```javascript
+export default {
+  modules: [
+    '@nuxtjs/gtm',
+  ],
+  gtm: {
+    id: 'GTM-XXXXXXX'
+  }
+}
+```

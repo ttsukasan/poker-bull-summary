@@ -35,7 +35,14 @@ export default {
   buildModules: [],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: [
+    '@nuxtjs/gtm',
+  ],
+
+  // Googleタグマネージャー
+  gtm: {
+    id: 'G-F3H3V1BRGG'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {}
