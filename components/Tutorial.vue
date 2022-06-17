@@ -15,7 +15,7 @@
         </p>
       </div>
       <div class="flex justify-center pt-4 space-x-2">
-        <a href="/"><svg
+        <a href="https://github.com/ttsukasan/nuxt-pages-sample"><svg
           class="w-6 h-6 text-gray-600 hover:text-gray-800 button--github"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
