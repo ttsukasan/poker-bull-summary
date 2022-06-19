@@ -1,11 +1,8 @@
 export default {
-  // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
   router: {
     base: '/nuxt-pages-sample/'
   },
-
-  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nuxt-pages-sample',
     htmlAttrs: {
@@ -21,31 +18,28 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/nuxt-pages-sample/favicon.ico' }
     ]
   },
-
-  // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/css/main.css',
     'boxicons/css/boxicons.min.css'
   ],
-
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
-
-  // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
-
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [],
-
-  // Modules: https://go.nuxtjs.dev/config-modules
+  buildModules: [
+    '@nuxt/postcss8'
+  ],
   modules: [
     '@nuxtjs/gtm',
   ],
-
   // Googleタグマネージャー
   gtm: {
     id: 'G-F3H3V1BRGG'
   },
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    }
+  }
 }
