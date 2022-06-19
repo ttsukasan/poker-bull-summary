@@ -4,7 +4,9 @@
     <!-- ヘッダー -->
     <Header></Header>
     <!-- メイン -->
-    <Nuxt />
+    <div class="container w-full md:max-w-3xl mx-auto pt-16">
+      <Nuxt/>
+    </div>
     <!-- フッター -->
     <Footer></Footer>
   </div>
