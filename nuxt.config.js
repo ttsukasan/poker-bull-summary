@@ -1,10 +1,10 @@
 export default {
   target: 'static',
   router: {
-    base: '/nuxt-pages-sample/'
+    base: '/poker-bull-summary/'
   },
   head: {
-    title: 'nuxt-pages-sample',
+    title: 'poker-bull-summary',
     htmlAttrs: {
       lang: 'ja'
     },
@@ -15,7 +15,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/nuxt-pages-sample/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/poker-bull-summary/favicon.ico' }
     ]
   },
   css: [

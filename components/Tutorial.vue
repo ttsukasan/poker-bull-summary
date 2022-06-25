@@ -12,7 +12,7 @@
       <nuxt-link to="/about">about page</nuxt-link>
     </p>
     <div class="flex justify-center py-6 space-x-2">
-      <a href="https://github.com/ttsukasan/nuxt-pages-sample"
+      <a href="https://github.com/ttsukasan/poker-bull-summary"
          class="text-gray-600 hover:text-gray-800">
         <i class='bx bxl-github bx-sm'></i>
       </a>
