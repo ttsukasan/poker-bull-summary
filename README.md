@@ -109,6 +109,7 @@ export default {
 - Boxicons https://boxicons.com/
 - ~~vuesax https://lusaxweb.github.io/vuesax/~~
 - tailwindcss https://tailwindcss.com/docs/guides/nuxtjs
-- Tailwind Toolbox - Minimal-Blog
+  - assets/css/tailwind.css/min.css はコード解析用に配置しており、システムでは使用していない
+- Tailwind Toolbox - Minimal-Blog テンプレート
   - https://www.tailwindtoolbox.com/templates/minimal-blog
   - https://github.com/tailwindtoolbox/Minimal-Blog
